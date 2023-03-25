@@ -15,6 +15,10 @@ export default function Products() {
     return <Typography>Loading...</Typography>;
   }
 
+  if (!data.length) {
+    return <Typography>Data not found.</Typography>;
+  }
+
   return (
     <Grid container spacing={4}>
       {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
